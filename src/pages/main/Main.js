@@ -1,9 +1,15 @@
 import React from 'react';
+import './Main.scss';
 
 const Main = () => {
   return (
-    <div>
-      Main
+    <div className="main">
+      <header>
+
+      </header>
+      <div>
+        Main
+      </div>
     </div>
   );
 };

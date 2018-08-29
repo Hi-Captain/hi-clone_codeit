@@ -25,3 +25,12 @@
   - idea : 
     - markup clone도 여간 만만히 볼게 아니였다.
     - main page 부터 천천히 진행해보자..
+
+> 2018.08.29
+  - title : Header Set
+  - action : 
+    - JSX markup
+    - Sass 수정
+  - idea : 
+    - 반응형은 일단 pc 환경 다 잡고 나중에 전체적으로 다시 잡자
+    - Footer 만들자
