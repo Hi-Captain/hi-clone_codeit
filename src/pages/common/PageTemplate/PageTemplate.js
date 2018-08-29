@@ -9,6 +9,7 @@ const PageTemplate = ({children}) => {
       <Navbar/>
       {children}
       <Footer/>
+      <div className="chat-plugin" />
     </div>
   );
 };

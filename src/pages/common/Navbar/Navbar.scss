@@ -1,3 +1,5 @@
+@import '../../../styles/utils';
+
 .navbar{
   color: #000;
   position: fixed;
@@ -20,27 +22,22 @@
 
     display: flex;
     justify-content: space-between;
-
-    .logo{
-      display: block;
-      width: 10rem;
-      height: 2.2rem;
-      background-image: url(./img/logo.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+  
+    .navbar-logo{
+      @include div-img-bgSet('./img/navbar_logo.png', 10rem, 2.2rem);
     }
 
     .menu-wrap{
       display: flex;
       align-items: center;
       
-      a{
+      & > *{
         margin-left: 5rem;
-
-        &.line{
-          padding-right: 5rem;
-          border-right: solid 3px rgba(50,50,50,0.225);
-        }
+      }
+      .line{
+        height: 1.5rem;
+        margin-left: 5rem;
+        border-right: 3px solid rgba(50,50,50,0.225);
       }
     }
   }
@@ -50,8 +47,8 @@
     background-color: transparent;
     box-shadow: none;
 
-    .logo{
-      background-image: url(./img/logo_white.png);
+    .navbar-logo{
+      background-image: url(./img/navbar_logo-white.png);
     }
     .line{
       border-right: 3px solid #fff !important;

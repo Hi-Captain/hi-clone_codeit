@@ -34,3 +34,13 @@
   - idea : 
     - 반응형은 일단 pc 환경 다 잡고 나중에 전체적으로 다시 잡자
     - Footer 만들자
+
+> 2018.08.29
+  - title : Footer Set
+  - action : 
+    - JSX markup
+    - Sass 수정
+    - page 폴더 수정
+  - idea : 
+    - 페이지 만들게 너무 많은데..?ㅋ 조금은 거르자..
+    - 이제부터 진짜 main page 부터 만들어보자 !
