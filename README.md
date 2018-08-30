@@ -58,4 +58,11 @@
   - action : 
     - signup page 수정
   - idea : 
-    - recommendation 정리할 것
+    - recommendation 페이지 정리하자
+
+> 2018.08.31
+  - title : Recommendation page
+  - action : 
+    - Recommendation page 렌더링 화면만 정리
+  - idea : 
+    - faq 페이지 정리하자
