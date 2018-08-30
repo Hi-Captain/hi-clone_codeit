@@ -52,3 +52,10 @@
     - pages > common에 LoginSignup 생성(템플릿)
   - idea : 
     - 웬지 9월 1일부로 메인페이지가 변할 것 같아서 login부터 시작함.
+
+> 2018.08.31
+  - title : Signup page
+  - action : 
+    - signup page 수정
+  - idea : 
+    - recommendation 정리할 것

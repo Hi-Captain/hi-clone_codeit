@@ -3,11 +3,11 @@ import './LoginSignup.scss';
 
 class LoginSignup extends Component {
   componentDidMount(){
-    this._SetHeaderFooter()
+    this._SetLSPage()
   }
 
   componentWillUnmount(){
-    this._SetHeaderFooter()
+    this._SetLSPage()
   }
 
   render() {
@@ -31,7 +31,7 @@ class LoginSignup extends Component {
     );
   }
 
-  _SetHeaderFooter = () => {
+  _SetLSPage = () => {
     document.querySelector('.navbar').classList.toggle('transparent');
     document.querySelector('.footer').classList.toggle('hidden');
   }

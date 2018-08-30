@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Recommendation = () => {
-  return (
-    <div>
-      Recommendation
-    </div>
-  );
-};
+class Recommendation extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
+}
 
 export default Recommendation;
