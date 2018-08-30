@@ -44,3 +44,11 @@
   - idea : 
     - 페이지 만들게 너무 많은데..?ㅋ 조금은 거르자..
     - 이제부터 진짜 main page 부터 만들어보자 !
+
+> 2018.08.30
+  - title : Login page
+  - action : 
+    - login page 수정
+    - pages > common에 LoginSignup 생성(템플릿)
+  - idea : 
+    - 웬지 9월 1일부로 메인페이지가 변할 것 같아서 login부터 시작함.

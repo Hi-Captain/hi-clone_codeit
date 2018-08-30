@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import LoginSignup from '../common/LoginSignup';
 
 const Signup = () => {
   return (
-    <div>
-      Signup
-    </div>
+  <Fragment>
+    <LoginSignup>
+      <div className="signup">signup</div>
+    </LoginSignup>
+  </Fragment>
   );
 };
 
