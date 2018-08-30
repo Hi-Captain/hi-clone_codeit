@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+a{
+  color: $font-color-link;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;

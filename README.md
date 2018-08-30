@@ -43,12 +43,12 @@
     - page 폴더 수정
   - idea : 
     - 페이지 만들게 너무 많은데..?ㅋ 조금은 거르자..
-    - 이제부터 진짜 main page 부터 만들어보자 !
+    - 이제부터 진짜 main 부터 만들어보자 !
 
 > 2018.08.30
   - title : Login page
   - action : 
-    - login page 수정
+    - login 페이지 마크업
     - pages > common에 LoginSignup 생성(템플릿)
   - idea : 
     - 웬지 9월 1일부로 메인페이지가 변할 것 같아서 login부터 시작함.
@@ -56,13 +56,23 @@
 > 2018.08.31
   - title : Signup page
   - action : 
-    - signup page 수정
+    - signup 페이지 마크업
   - idea : 
     - recommendation 페이지 정리하자
 
 > 2018.08.31
   - title : Recommendation page
   - action : 
-    - Recommendation page 렌더링 화면만 정리
+    - Recommendation 페이지 최초 렌더링 화면만 마크업
   - idea : 
     - faq 페이지 정리하자
+
+> 2018.08.31
+  - title : Faq page
+  - action : 
+    - Faq 페이지 마크업
+    - radio버튼으로 아코디언 구현
+  - idea : 
+    - radio버튼으로 간단하게 구현해봤는데, 애니메이션이 조금 어색한 것 같다.
+    - radio버튼이라서 전부 완전히 닫는 기능은 구현할 수 없었다.
+    - about 페이지 정리하자
