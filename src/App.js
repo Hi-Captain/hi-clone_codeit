@@ -9,14 +9,14 @@ class App extends Component {
       <BrowserRouter>
         <PageTemplate>
           <Switch>
-            <Route exact path='/' component={Main} />
+            <Route exact path='/' component={Main}/>
             <Route path="/courses" component={Courses} />
             <Route path="/schools" component={Schools} />
             <Route path="/questions" component={Questions} />
             <Route path="/reviews" component={Reviews} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={About}/>
             <Route path="/faq" component={Faq} />
             <Route path="/recommendation" component={Recommendation} />
             <Route component={NotFound} />

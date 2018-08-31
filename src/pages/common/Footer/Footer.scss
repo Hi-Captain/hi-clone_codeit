@@ -47,7 +47,7 @@
       display: flex;
 
       .footer-logo{
-        @include div-img-bgSet('./img/footer_logo.png', 9.5rem, 2.4rem);
+        @include div-img-bgSet('./img/footer_logo.png', 9.8rem, 2.4rem);
 
         margin-right: 2.3rem;
       }
@@ -57,6 +57,8 @@
         font-size: $font-size-small;
         font-weight: 300;
         line-height: 1.75;
+
+        b{font-weight: 500;}
       }
     }
 

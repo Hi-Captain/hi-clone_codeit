@@ -1,0 +1,355 @@
+@import '../../styles/utils';
+
+.about{
+  header{
+    background-image: url(./img/about_header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 13.1rem;
+    padding-bottom: 11rem;
+
+    color: #fff;
+    text-align: center;
+
+    h1{
+      font-size: $font-size-xbig;
+      font-weight: 300;
+      margin-bottom: 14px;
+      line-height: 1.1;
+    }
+
+    h2{
+      font-size: $font-size-big;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .story{
+    padding: 6.4rem 0 4.9rem;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    &__container{
+      width: 111.9rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .founder{
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+  
+        .img{
+          @include div-img-bgSet('./img/about_ceo.jpg', 17.4rem, 17.4rem);
+          border-radius: 50%;
+          margin:0 auto 15px;
+        }
+  
+        .name{
+          font-size: $font-size-default;
+  
+          
+          b{
+            font-weight: 500;
+            font-size: $font-size-big;
+            margin-right: 5px;
+          }
+        }
+  
+        .message{
+          font-size: $font-size-big;
+          font-weight: 300;
+          margin: 3.2rem auto;
+          margin-bottom: 5.6rem;
+          width: 30rem;
+          text-align: center;
+  
+          b{
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .wrap{
+        display: inline-block;
+        width: 744px;
+        text-align: left;
+  
+        p{
+          font-size: $font-size-default;
+          width: 100%;
+          font-weight: 300;
+          margin: 0 auto;
+          margin-bottom: 1.2rem;
+          color: #343434;
+  
+          b{
+            font-weight: 500;
+          }
+        }
+  
+        .divider{
+          margin: 2.5rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          .dot{
+            width: 4px;
+            height: 4px;
+            vertical-align: middle;
+            border-radius: 50%;
+            background-color: #343434;
+            margin: 0 2px;
+          }
+        }
+  
+        .i-wrap{
+          font-size: $font-size-default;
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          margin: 0;
+          margin: 16px 0;
+          padding: 16px 20px;
+          text-align: center;
+          border: none;
+  
+          &::before,
+          &::after{
+            position: absolute;
+            right: 0;
+            left: 0;
+            display: block;
+            width: 10%;
+            height: 1px;
+            margin: 0 auto;
+            content: '';
+            background-color: black;
+          }
+  
+          &::before{top:0;}
+          &::after{bottom:0;}
+        }
+      }
+    }
+  }
+
+  .features{
+    padding-top: 11.6rem;
+    padding-bottom: 12.9rem;
+
+    &__container{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+
+      .feature{
+        width: 330px;
+        margin: 0 24px;
+
+        .icon{
+          width: 11rem;
+          height: 11rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          border-radius: 50%;
+          background-color: #ffffff;
+          box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.05);
+
+          .img-1{@include div-img-bgSet('./img/about_fun.png', 6.313rem, 5.4rem)}
+          .img-2{@include div-img-bgSet('./img/about_cheap.png', 4.834rem, 5.4rem)}
+          .img-3{@include div-img-bgSet('./img/about_software.png', 6.314rem, 5.4rem)}
+        }
+
+        .title{
+          font-size: 20px;
+          margin-top: 36px;
+          margin-bottom: 25px;
+          color: $font-color-dark;
+        }
+
+        .description{
+          font-size: 16px;
+          width: 100%;
+          text-align: left;
+          font-weight: 300;
+          margin: 0 auto;
+          color: $font-color-dark;
+
+          b{font-weight: bolder;}
+        }
+      }
+    }
+  }
+
+  .tasks{
+    padding-top: 6.3rem;
+    padding-bottom: 11.7rem;
+    background-image: url(./img/about_tasks-bg.jpg);
+    background-size: cover;
+
+    h2{
+      font-size: 2.8rem;
+      margin-bottom: 3.5rem;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.1;
+      color: $font-color-light-blue;
+    }
+
+    p{
+      margin-bottom: 63px;
+      font-size: $font-size-default;
+      font-weight: 300;
+      text-align: center;
+
+      b{font-weight: bolder}
+    }
+
+    &__container{
+      width: 1146px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .task{
+        width: 34.2rem;
+
+        .title{
+          font-size: $font-size-big;
+          font-weight: 400;
+          margin: 2.1rem 0 1.9rem;
+          text-align: center;
+          color: $font-color-light-blue;
+        }
+
+        .description{
+          font-size: $font-size-default;
+          font-weight: 300;
+    
+          b{font-weight: bolder}
+        }
+
+        .img1{@include div-img-bgSet('./img/about_course.jpg', 100%, 22.8rem)}
+        .img2{@include div-img-bgSet('./img/about_development.jpg', 100%, 22.8rem)}
+        .img3{@include div-img-bgSet('./img/about_design.jpg', 100%, 22.8rem)}
+      }
+    }
+  }
+
+  .media{
+    padding-top: 4.8rem;
+    padding-bottom: 6.4rem;
+    background-image: linear-gradient(to right, rgba(91,198,248,0.72), rgba(112,127,239,0.72));
+
+    h2{
+      margin-bottom: 3.8rem;
+      line-height: 1.1;
+      font-weight: 300;
+      font-size: 2.8rem;
+      text-align: center;
+      color: #fff;
+    }
+    &__container{
+      width: 111.8rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      a{
+        display: block;
+        width: 23rem;
+        height: 18.5rem;
+        box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.07);
+        padding: 4.2rem 0 2.4rem;
+        border-radius: 1rem;
+        background-color: white;
+  
+        .img{
+          margin:0 auto 3.2rem;
+          &-1{@include div-img-bgSet('./img/about_media1.png', 9rem, 3rem)}
+          &-2{@include div-img-bgSet('./img/about_media2.png', 9rem, 3rem)}
+          &-3{@include div-img-bgSet('./img/about_media3.png', 9rem, 3rem)}
+          &-4{@include div-img-bgSet('./img/about_media4.png', 9rem, 3rem)}
+        }
+  
+        .title{
+          text-align: center;
+          color: $font-color-dark;
+        }
+      }
+    }
+  }
+
+  .team{
+    padding-top: 8.5rem;
+    padding-bottom: 6.7rem;
+    background-image: url(./img/about_team-bg.jpg);
+    background-position: center top;
+    background-size: cover;
+
+    h2{
+      font-size: 2.8rem;
+      font-weight: 300;
+      margin: 0;
+      margin-bottom: 7.3rem;
+      text-align: center;
+      color: $font-color-light-blue;
+      line-height: 1.1;
+    }
+
+    &__container{
+      width: 72rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .member{
+        width: 20rem;
+        height: 32.2rem;
+        margin-bottom: 4.4rem;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+
+        .img{
+          margin-bottom: 2.1rem;
+
+          &-1{@include div-img-bgSet('./img/about_ceo.jpg', 20rem, 20rem)}
+          &-2{@include div-img-bgSet('./img/about_member2.jpg', 20rem, 20rem)}
+          &-3{@include div-img-bgSet('./img/about_member3.jpg', 20rem, 20rem)}
+          &-4{@include div-img-bgSet('./img/about_member4.jpg', 20rem, 20rem)}
+          &-5{@include div-img-bgSet('./img/about_member5.jpg', 20rem, 20rem)}
+          &-6{@include div-img-bgSet('./img/about_member6.jpg', 20rem, 20rem)}
+        }
+
+        .name{
+          color: $font-color-dark;
+          font-size: $font-size-big;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        .position{
+          color: $font-color-dark;
+          font-size: $font-size-default;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

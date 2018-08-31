@@ -68,7 +68,7 @@
     - faq 페이지 정리하자
 
 > 2018.08.31
-  - title : Faq page
+  - title : Faq Page
   - action : 
     - Faq 페이지 마크업
     - radio버튼으로 아코디언 구현
@@ -76,3 +76,16 @@
     - radio버튼으로 간단하게 구현해봤는데, 애니메이션이 조금 어색한 것 같다.
     - radio버튼이라서 전부 완전히 닫는 기능은 구현할 수 없었다.
     - about 페이지 정리하자
+
+> 2018.08.31
+  - title : About Page
+  - action : 
+    - 회사소개 페이지 마크업
+    - Scroll 할 때 navbar class 수정
+  - idea : 
+    - 지금 footer-border 없애는 것도 그렇고,
+      navbar 투명도 조절하는 것도 그렇고,
+      navbar 스크롤로 투명도 수정하는 것도 그렇고,
+      계속 각 컴포넌트마다 함수 주고 라이프사이클에서 돌리는데
+      좀 더 간결하고 재사용하기 쉽게 정리하려면 어떻게 해야될까...?
+    - review 페이지 정리하자
