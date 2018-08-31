@@ -73,35 +73,35 @@ class Faq extends Component {
           <ul>
             <li>
               <input type="radio" id="service-1" name="serviceAccordion" defaultChecked/>
-              <label className="question" htmlFor="class-1">수업 기간은 연장할 수 있나요?<div className="arrow"/></label>
+              <label className="question" htmlFor="service-1">수업 기간은 연장할 수 있나요?<div className="arrow"/></label>
               <div className="answer">
                 <p>대부분의 경우 3개월이면 여유롭게 수업을 이수하실 수 있습니다. 중간에 바쁜 사정이 있으면 바로 아래 질문에 있는 '중도 휴학 제도'를 활용해보세요! 만약 3개월 내에 다 끝내지 못하면, 1개월 단위로 연장할 수 있습니다!</p>
               </div>
             </li>
             <li>
               <input type="radio" id="service-2" name="serviceAccordion"/>
-              <label className="question" htmlFor="class-2">중간에 휴학도 가능한가요?<div className="arrow"/></label>
+              <label className="question" htmlFor="service-2">중간에 휴학도 가능한가요?<div className="arrow"/></label>
               <div className="answer">
                 <p>1회에 한하여 중도 휴학을 할 수 있습니다. 휴학 가능 기간은 최대 4주입니다. 휴학 후 4주가 지나면, 자동으로 수업이 시작되며 수강 가능일이 차감됩니다. 강의를 듣는 도중 바쁘신 분들은, 휴학 제도를 이용해주시기 바랍니다.</p>
               </div>
             </li>
             <li>
               <input type="radio" id="service-3" name="serviceAccordion"/>
-              <label className="question" htmlFor="class-3">수동 채점 과제에 대한 채점이 늦어지면 어떻게 해야 하나요?<div className="arrow"/></label>
+              <label className="question" htmlFor="service-3">수동 채점 과제에 대한 채점이 늦어지면 어떻게 해야 하나요?<div className="arrow"/></label>
               <div className="answer">
                 <p>수동 채점 과제는 영업일 1-2일 이내로 처리하는 것이 원칙입니다. 월요일에 제출하셨다면 수요일 안에 채점을 받습니다. 금요일에 제출하셨다면 최대 화요일 안에 채점을 받습니다. 만약 그 기한 안에 채점을 받지 못하셨다면, 코드잇 팀에서 실수를 한 것입니다. 댓글 또는 <a href="mailto:yoonsoo@codeit.kr" target="_top">yoonsoo@codeit.kr</a>로 문의주시면, 빠르고 친절하게 답변드리도록 하겠습니다.</p>
               </div>
             </li>
             <li>
               <input type="radio" id="service-4" name="serviceAccordion"/>
-              <label className="question" htmlFor="class-4">수료증 발급 기준은 무엇인가요?<div className="arrow"/></label>
+              <label className="question" htmlFor="service-4">수료증 발급 기준은 무엇인가요?<div className="arrow"/></label>
               <div className="answer">
                 <p>수료증은 각 강좌의 70% 이상을 수료했을 때 발급받으실 수 있습니다. 강의를 끝까지 이수하신 후, 멋진 수료증을 받아보세요!</p>
               </div>
             </li>
             <li>
               <input type="radio" id="service-5" name="serviceAccordion"/>
-              <label className="question" htmlFor="class-5">채팅 문의는 어떤 용도로 사용하는 건가요?<div className="arrow"/></label>
+              <label className="question" htmlFor="service-5">채팅 문의는 어떤 용도로 사용하는 건가요?<div className="arrow"/></label>
               <div className="answer">
                 <p>채팅 문의는 강좌 신청에 대한 문의, 서비스/강의 개선 사항, 건의 사항을 받는 용도입니다. 과제나 강의 개념과 연관된 질문은 커뮤니티에 올려주세요!</p>
               </div>

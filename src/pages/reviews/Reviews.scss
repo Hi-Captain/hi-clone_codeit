@@ -1,0 +1,264 @@
+@import '../../styles/utils';
+
+.reviews{
+  .star{
+    display: inline-block;
+    @include div-img-bgSet('./img/reviews_star-full.png', 2rem, 2rem)
+  }
+  header{
+    background-image: url(./img/reviews_bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    padding: 11rem 0;
+    padding-top: 13.1rem;
+
+    h1{
+      font-size: 3.6rem;
+      font-weight: 300;
+      line-height: 1.1;
+      margin: 0;
+      margin-bottom: 1.6rem;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    h2{
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .carousel{
+    padding-top: 3.6rem;
+    padding-bottom: 4.4rem;
+
+    &__item{
+      width: 100%;
+      height: 100%;
+      margin: 1.7rem 0;
+      position: relative;
+      
+
+      &-content{
+        width: 48.4rem;
+        height: 8.1rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        font-weight: 200;
+        text-align: center;
+        color: $font-color-dark;    
+      }
+
+      &-img{
+        @include div-img-bgSet('./img/reviews_profile1.jpg', 4rem, 4rem);
+        border-radius: 50%;
+        margin: 1.5rem auto 1rem;
+      }
+
+      &-name{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: #484c52;
+        line-height: 1.5;
+      }
+      
+      &-star{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 2.6rem;
+      }
+
+      &-left,
+      &-right{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 15%;
+      opacity: 0.5;
+      font-size: $font-size-big;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      cursor: pointer;
+      
+        .arrow{
+          position: relative;
+          top: 7rem;
+          margin: 0 auto;
+          @include div-img-bgSet('./img/reviews_arrow-blue.png', 2rem, 5.3rem);
+        }
+      }
+      &-right{
+        left: unset;
+        right: 0;
+
+        .arrow{
+          transform: rotate(180deg)
+        }
+      }
+    }
+  }
+  .all-reviews{
+    padding-top: 6.3rem;
+    padding-bottom: 8.4rem;
+    background-image: linear-gradient(to top, rgba(251,253,254,0.44), rgba(250,252,254,0.44) 39%, rgba(249,252,254,0.44) 68%, rgba(231,243,255,0.44));
+
+    .summary{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .average{
+        width: 20rem;
+        margin-right: 25px;
+        text-align: center;
+
+        .score{
+          font-size: 7.2rem;
+          color: $font-color-light-dark;
+        }
+        .stars{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .number{
+            margin-left: .3rem;
+            font-size: 1rem;
+            font-weight: 300;
+            color: $font-color-light-dark;
+          }
+        }
+      }
+
+      .stats{
+        .stat{
+          .label{
+            font-size: $font-size-small;
+            font-weight: 300;
+            display: inline-block;
+            width: 2.3rem;
+            text-align: left;
+            vertical-align: middle;
+            color: $font-color-light-dark;
+            margin-right: 1rem;
+          }
+          .bar{
+            position: relative;
+            display: inline-block;
+            width: 21.4rem;
+            height: 1.8rem;
+            vertical-align: middle;
+            border-radius: 7px;
+            background-color: #f7f7f7;
+
+            &__inner{
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 1.8rem;
+              border-radius: 7px;
+              background-color: #ffd021;
+              &.point5{width: 89%}
+              &.point4{width: 11%}
+              &.point3{width: 0.5%}
+            }
+          }
+          .percentage{
+            font-size: $font-size-small;
+            font-weight: 300;
+            display: inline-block;
+            width: 2.3rem;
+            text-align: left;
+            vertical-align: middle;
+            color: #9b9b9b;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .review__container{
+      .review{
+        width: 72rem;
+        margin: 3rem auto;
+        padding: 3.1rem 3.2rem;
+        border-radius: 1rem;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 4px 4px 5px 1px rgba(0,0,0,0.05);
+        position: relative;
+        
+        &-profile{
+          @include div-img-bgSet('./img/reviews_profile2.png', 5rem, 5rem);
+          margin-right: 1rem;
+          vertical-align: middle;
+          border-radius: 50%;
+          float: left;
+        }
+
+        &-header{
+          .reviewer{
+            font-size: $font-size-default;
+            margin-bottom: .6rem;
+
+            .name{
+              font-weight: 500;
+            }
+            .date{
+             font-size: $font-size-xsmall;
+             color: #9b9b9b;
+             margin-left: 4px; 
+            }
+          }
+          .reviewed-course{
+            font-size: 1.4rem;
+            top: 3.1rem;
+            right: 3.2rem;
+            font-weight: 300;
+            position: absolute;
+            color: $font-color-light-dark
+
+          }
+        }
+        &-content{
+          font-size: $font-size-default;
+          line-height: 1.44;
+          padding-left: 6rem;
+          font-weight: 300;
+          line-height: 1.43;
+          margin: 0;
+          margin-top: 1.9rem;
+          color: $font-color-dark
+        }
+      }
+      .review-btn{
+        text-align: center;
+        font-size: 1.8rem;
+
+        button{
+          position: relative;
+          bottom: 1px;
+          margin: 0 10px;
+          padding: 0;
+          cursor: pointer;
+          vertical-align: middle;
+          border: none;
+          background-color: transparent;
+          outline: none;
+
+          .img{
+            &.prev{@include div-img-bgSet('./img/reviews_arrow-prev.png', 4.7rem, 2rem)}
+            &.next{@include div-img-bgSet('./img/reviews_arrow-next.png', 4.7rem, 2rem)}
+          }
+        }
+      }
+    }
+  }
+}
