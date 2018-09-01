@@ -1,0 +1,205 @@
+@import '../../styles/utils';
+
+.courses{
+  header{
+    padding: 13.1rem 0 11rem;
+    color: #fff;
+    background-image: url(./img/courses_header.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1{
+      font-size: 3.6rem;
+      font-weight: 300;
+      margin: 0 0 1.5rem;
+      text-align: center;
+      line-height: 1.1;
+    }
+    h2{
+      font-size: $font-size-big;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__container{
+    width: 108rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .course{
+      width: 33rem;
+      height: 47.7rem;
+      margin-bottom: 5rem;
+      color: $font-color-dark;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.05);
+      margin: 0 1.5rem;
+      margin-bottom: 5rem;
+
+      .img{
+        &.python{@include div-img-bgSet('./img/courses_python.jpg', 100%, 13.1rem)}
+        &.html{@include div-img-bgSet('./img/courses_html.jpg', 100%, 13.1rem)}
+        &.js{@include div-img-bgSet('./img/courses_js.jpg', 100%, 13.1rem)}
+        &.next{@include div-img-bgSet('./img/courses_next.jpg', 100%, 13.1rem)}
+        background-size: cover !important;
+      }
+      .info{
+        padding: 2.1rem 2.8rem;
+
+        h3{
+          font-size: 2.4rem;
+          line-height: 1.3;
+          margin-bottom: 1.2rem;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        h4{
+          font-size: $font-size-small;
+          margin: 5px 0;
+          margin-bottom: 2rem;
+          font-weight: 300;
+          text-align: center;
+        }
+
+        p{
+          font-size: $font-size-small;
+          font-weight: 300;
+          display: block;
+          height: 8.4rem;
+          color: $font-color-dark;
+
+          &.next{
+            margin-top: 4rem;
+          }
+        }
+
+        .prereq{
+          font-size: $font-size-xsmall;
+          font-weight: 300;
+          vertical-align: middle;
+          color: $font-color-light-blue;
+          text-align: center;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+
+          span{
+            color: $font-color-dark;
+          }
+          .book-icon{
+            display: inline-block;
+            margin-bottom: -2px;
+            margin-right: 2px;
+            @include div-img-bgSet('./img/courses_book.png', 1.5rem, 1.3rem);
+          }
+        }
+
+        .price{
+          text-align: center;
+
+          .original{
+            font-size: $font-size-default;
+            font-weight: 300;
+            display: block;
+            margin-bottom: -8px;
+            text-decoration: line-through;
+            color: $font-color-light-gray;
+          }
+          .discount{
+            font-size: 24px;
+            color: $font-color-light-dark;
+            font-weight: 300;
+          }
+          .monthly{
+            font-size: 14px;
+            display: block;
+            font-weight: 300;
+            text-align: center;
+            color: $font-color-light-gray;
+          }
+        }
+        button{
+          width: 18rem;
+          height: 5rem;
+          font-size: $font-size-small;
+          display: block;
+          margin: 0 auto;
+          margin-top: 5rem;
+          cursor: pointer;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          outline: none;
+          background-color: $btn-border-blue;
+        }
+      }
+    }
+  }
+
+  &__wadiz{
+    width: 108rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 0 1.5rem;
+
+    button{
+      cursor: pointer;
+      outline: none;
+      font-size: $font-size-small;
+      font-weight: 300;
+      font-family: inherit;
+      color: $font-color-light-gray;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  &__faq{
+    width: 105rem;
+    margin: 0 auto;
+    border: none;
+
+    h3{
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      padding: 0 3rem;
+      color: $font-color-light-dark;
+    }
+    .question{
+      padding: 1.6rem 3rem;
+      border-bottom: 1px solid rgba(151,151,151,0.3);
+
+      h4{
+        font-weight: 500;
+        font-size: $font-size-default;
+        font-family: inherit;
+        color: #303030;
+        line-height: 1.71;
+      }
+    }
+    .answer{
+      font-size: 16px;
+      padding: 22px 30px;
+      background-color: white;
+      line-height: 1.8;
+    }
+    .faq-btn{
+      padding: 1.6rem 3rem;
+      margin-bottom: 5rem;
+
+      a{
+        font-size: $font-size-small;
+        font-weight: 300;
+        line-height: 1.25;
+        color: $font-color-light-blue;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import './Recommendation.scss';
 
 class Recommendation extends Component {
   componentDidMount(){
+    window.scrollTo(0, 0)
     this._SetRecomPage()
   }
 

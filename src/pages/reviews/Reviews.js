@@ -137,6 +137,7 @@ class Reviews extends Component {
   }
 
   _nextPage = () => {
+    window.scrollTo(0, 610)
     const {thisPage} = this.state
     axios.get("./data.json")
     .then(response => {
@@ -153,6 +154,7 @@ class Reviews extends Component {
   }
 
   _prevPage = () => {
+    window.scrollTo(0, 610)
     const {thisPage} = this.state
     axios.get("./data.json")
     .then(response => {

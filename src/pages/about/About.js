@@ -3,6 +3,7 @@ import './About.scss';
 
 class About extends Component {
   componentDidMount() {
+    window.scrollTo(0, 0)
     window.addEventListener('scroll', this._ScrollNav);
     this._SetAboutPage()
   }
