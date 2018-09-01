@@ -106,4 +106,12 @@
     - 커뮤니티 페이지 '간단하게' 마크업
     - 컴포넌트 전환될 때 window.scrollTo(0,0) 으로 최상단 이동
   - idea : 
-    - school 페이지 정리하자
+    - schools 페이지 정리하자
+
+> 2018.09.01
+  - title : Schools Page
+  - action : 
+    - 스쿨 페이지 마크업
+    - 각 하위 스쿨 페이지는 생략
+  - idea : 
+    - courses 페이지 정리하자

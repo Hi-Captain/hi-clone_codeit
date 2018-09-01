@@ -1,0 +1,288 @@
+@import '../../styles/utils';
+
+.schools{
+  header{
+    padding: 13.1rem 0 11rem;
+    color: #fff;
+    background-image: url(./img/schools_header.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1{
+      font-size: 3.6rem;
+      font-weight: 300;
+      margin: 0 0 1.5rem;
+      text-align: center;
+      line-height: 1.1;
+    }
+    h2{
+      font-size: $font-size-big;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  &__container{
+    width: 72rem;;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+
+    .school{
+      position: relative;
+      padding: 3.5rem 4.8rem;
+      box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.05);
+      cursor: pointer;
+
+      h3{
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 4.9rem;
+        position: relative;
+        display: inline-block;
+        color: $font-color-dark;
+
+        span{
+          position: relative;
+          z-index: 1;
+        }
+        .deco-bar{
+          bottom: -1rem;
+          left: -4.8rem;
+          width: calc(100% + 96px);
+          height: 2.9rem;
+          position: absolute;
+
+          &::after{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 0;
+            height: 0;
+            content: '';
+            border-bottom: 2.9rem solid white;
+            border-left: 2.9rem solid transparent;
+          }
+        }
+      }
+
+      &-info{
+        .basic{
+          display: block;
+          float: left;
+          width: 34.8rem;
+          margin-right: calc(100% - 34.8rem - 25rem);
+
+          &-description{
+            font-size: $font-size-small;
+            font-weight: 300;
+            color: #343434;
+          }
+
+          &-prereq{
+            font-size: $font-size-xsmall;
+            font-weight: 300;
+            margin-top: 5.5rem;
+            vertical-align: middle;
+            color: $font-color-light-blue;
+            
+            .book-icon{
+              display: inline-block;
+              margin-bottom: -1px;
+              @include div-img-bgSet('./img/schools_book.png', 1.3rem, 1.127rem)
+            }
+            span{
+              color: $font-color-dark;
+            }
+          }
+        }
+        .course-list{
+          padding: 0;
+          padding-left: 4px;
+          list-style: none;
+          float: left;
+          width: 25rem;
+          margin: 0;
+
+          li{
+            font-size: $font-size-small;
+            font-weight: 300;
+            margin: 0;
+            padding: 0 1rem 2.4rem;
+            color: $font-color-light-blue;
+            border-left: 1px solid #f4f4f4;
+
+            &::before{
+              display: inline-block;
+              width: 3px;
+              height: 3px;
+              margin-right: 8px;
+              margin-left: -12px;
+              content: '';
+              vertical-align: top;
+              border-radius: 50%;
+              background-color: #66a1f4;
+            }
+
+            .course-info{
+              position: relative;
+              bottom: 7px;
+              display: inline-block;
+              vertical-align: top;
+
+              .duration{
+                color: $font-color-light-dark;
+                font-size: $font-size-xsmall;
+                font-weight: 300;
+                display: block;
+              }
+            }
+          }
+        }
+        &::after{
+          display: block;
+          clear: both;
+          content: '';
+        }
+      }
+
+      .prices{
+        margin-top: 2.1rem;
+
+        .original-price{
+          display: block;
+          font-size: 1.8rem;
+          font-weight: 300;
+          text-decoration: line-through;
+          color: #9b9b9b;
+        }
+
+        .new-price{
+          font-size: 2.4rem;
+          text-align: left;
+          font-weight: 300;
+          color: $font-color-light-dark;
+        }
+
+        .monthly-price{
+          font-size: $font-size-small;
+          font-weight: 300;
+          color: #9b9b9b;
+          text-align: left;
+        }
+      }
+
+      .discount{
+        font-size: 16px;
+        right: 1rem;
+        bottom: 1rem;
+        font-weight: 300;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        color: $font-color-dark;
+
+        b{font-weight: bolder}
+      }
+      &::after{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 0;
+        height: 0;
+        content: '';
+        border-left: 12rem solid transparent;
+        border-bottom: 12rem solid transparent;
+      }
+
+      &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5px;
+        content: '';
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      &:nth-child(1){
+        &::after{
+          border-bottom: 120px solid #d5d1ff;
+        }
+        &::before{
+          background-image: linear-gradient(to right, #d5d1ff, #9a92ff);
+        }
+        h3{
+          .deco-bar{
+            background-image: linear-gradient(to right, rgba(213,209,255,0.24), rgba(131,120,255,0.23));
+          }
+        }
+      }
+
+      &:nth-child(2){
+        &::after{
+          border-bottom: 120px solid #9dabbe;
+        }
+        &::before{
+          background-image: linear-gradient(to right, rgba(157,171,190,0.53), #7c8ba0);
+        }
+        h3{
+          .deco-bar{
+            background-image: linear-gradient(to right, rgba(204,207,211,0.24), rgba(124,139,160,0.23));
+          }
+        }
+      }
+      
+      &:not(:last-child){
+        margin-bottom: 5.4rem;
+      }
+    }
+  }
+  &__faq{
+    width: 700px;
+    margin: 0 auto;
+    border: none;
+
+    h3{
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      padding: 0 3rem;
+      color: $font-color-light-dark;
+    }
+    .question{
+      padding: 1.6rem 3rem;
+      border-bottom: 1px solid rgba(151,151,151,0.3);
+
+      h4{
+        font-weight: 500;
+        font-size: $font-size-default;
+        font-family: inherit;
+        color: #303030;
+        line-height: 1.71;
+      }
+    }
+    .answer{
+      font-size: 16px;
+      padding: 22px 30px;
+      background-color: white;
+      line-height: 1.8;
+    }
+    .faq-btn{
+      padding: 1.6rem 3rem;
+      margin-bottom: 5rem;
+
+      a{
+        font-size: $font-size-small;
+        font-weight: 300;
+        line-height: 1.25;
+        color: $font-color-light-blue;
+      }
+    }
+  }
+}
