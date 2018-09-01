@@ -94,8 +94,16 @@
   - title : Reviews Page
   - action : 
     - 수강후기 페이지 마크업
-    - data.json파일 만들어서 일부 데이터 불러오기
+    - data.json파일 만들어서 axios로 데이터 불러오기
     - best-review skip
   - idea : 
     - 프로필 사진 불러오려면 어떻게 해야될가..?
     - questions 페이지 '간단하게' 정리하자
+
+> 2018.09.01
+  - title : Questions Page
+  - action : 
+    - 커뮤니티 페이지 '간단하게' 마크업
+    - 컴포넌트 전환될 때 window.scrollTo(0,0) 으로 최상단 이동
+  - idea : 
+    - school 페이지 정리하자

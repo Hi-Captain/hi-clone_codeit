@@ -16,6 +16,7 @@ class Reviews extends Component {
 
   componentDidMount() {
     const {thisPage} = this.state
+    window.scrollTo(0, 0)
     window.addEventListener('scroll', this._ScrollNav);
     axios.get("./data.json")
     .then(response => {
@@ -38,7 +39,6 @@ class Reviews extends Component {
   render() {
     const { thisPage, lastPage, reviews, isFirst, isLast } = this.state;
     const maping = reviews.map((value, i) => {
-      console.log(typeof value.profile)
       return (
         <div className="review" key={i}>
           <div className="review-profile"/>
