@@ -1,9 +1,34 @@
 @import '../../../styles/utils';
-
-.chat-plugin{
-  @include div-img-bgSet('./img/chat-plugin.png', 12.8rem, 6.3rem);
-  cursor: pointer;
+.pageTemplate{
+  transition-duration: .5s;
+  opacity: 1;
+  @media only screen and (max-width:$window-min){opacity: 0.1;}
+  .chat-plugin{
+    @include div-img-bgSet('./img/chat-plugin.png', 12.8rem, 6.3rem);
+    cursor: pointer;
+    position: fixed;
+    bottom: 2.3rem;
+    right: 2.4rem;
+  }
+}
+.resize{
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
-  bottom: 2.3rem;
-  right: 2.4rem;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: #fff;
+  font-size: $font-size-big;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.7;
+  @include flex-center-center;
+  @media only screen and (max-width:$window-min){
+    z-index: 999999;
+    opacity: 0.9;
+  }
 }

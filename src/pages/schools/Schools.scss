@@ -11,7 +11,7 @@
     h1{
       font-size: 3.6rem;
       font-weight: 300;
-      margin: 0 0 1.5rem;
+      margin: 0 0 1.2rem;
       text-align: center;
       line-height: 1.1;
     }
@@ -48,7 +48,7 @@
           z-index: 1;
         }
         .deco-bar{
-          bottom: -1rem;
+          bottom: -1.2rem;
           left: -4.8rem;
           width: calc(100% + 96px);
           height: 2.9rem;
@@ -127,6 +127,7 @@
             }
 
             .course-info{
+              padding-left: 3px;
               position: relative;
               bottom: 7px;
               display: inline-block;
@@ -245,6 +246,7 @@
   }
   &__faq{
     width: 105rem;
+    @media only screen and (max-width:$window-max){width: 70rem;}
     margin: 0 auto;
     border: none;
 
@@ -255,23 +257,27 @@
       padding: 0 3rem;
       color: $font-color-light-dark;
     }
-    .question{
-      padding: 1.6rem 3rem;
-      border-bottom: 1px solid rgba(151,151,151,0.3);
-
-      h4{
-        font-weight: 500;
-        font-size: $font-size-default;
-        font-family: inherit;
-        color: #303030;
-        line-height: 1.71;
+    .panel{
+      margin-bottom: 3rem;
+      
+      .question{
+        padding: 1.6rem 3rem;
+        border-bottom: 1px solid rgba(151,151,151,0.3);
+  
+        h4{
+          font-weight: 500;
+          font-size: $font-size-default;
+          font-family: inherit;
+          color: #303030;
+          line-height: 1.71;
+        }
       }
-    }
-    .answer{
-      font-size: 16px;
-      padding: 22px 30px;
-      background-color: white;
-      line-height: 1.8;
+      .answer{
+        font-size: 16px;
+        padding: 22px 30px;
+        background-color: white;
+        line-height: 1.8;
+      }
     }
     .faq-btn{
       padding: 1.6rem 3rem;

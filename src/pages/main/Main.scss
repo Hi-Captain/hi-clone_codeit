@@ -10,10 +10,10 @@
 
     @include flex-center-center;
     
-
     &__txt{
       color: #fff;
       margin-right: 18.5rem;
+      @media only screen and (max-width:$window-max){margin-right: 10rem;}
 
       h1{
         font-size: $font-size-xxbig;
@@ -90,8 +90,12 @@
     }
   }
   .why{
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 7rem;
+    padding-bottom: 12rem;
+    @media only screen and (max-width:$window-max){
+      padding-top: 6rem;
+      padding-bottom: 9rem;
+    }
     background-image: url(./img/main_why-bg.jpg);
     background-size: cover;
     background-position: center top;
@@ -119,9 +123,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
+      @media only screen and (max-width: $window-max){width: 97rem;}
+
       .reason{
         width: 54rem;
         margin-bottom: 4rem;
+        @media only screen and (max-width: $window-max){width: 47rem;}
 
         .num{
           font-size: 5rem;
@@ -149,6 +156,10 @@
           &.why2{@include div-img-bgSet('./img/main_why2.png', 50rem, 30.417rem)}
           &.why3{@include div-img-bgSet('./img/main_why3.png', 50rem, 30.417rem)}
           &.why4{@include div-img-bgSet('./img/main_why4.png', 50rem, 30.417rem)}
+          @media only screen and (max-width: $window-max){
+            width: 47rem !important;
+            height: 28.592rem !important;
+          }
         }
       }
     }
@@ -221,6 +232,7 @@
 
       .left{
         margin-right: 13rem;
+        @media only screen and (max-width:$window-max){margin-right: 9rem;}
 
         .coor-plane{
           width: 30rem;
@@ -333,6 +345,7 @@
                 box-shadow: 0 3px 6px 2px rgba(74,145,243,0.24);
               }
               .label{
+                font-size: $font-size-default;
                 color: #66a1f4;
               }
             }
@@ -469,5 +482,9 @@
         }
       }
     }
+  }
+
+  @media only screen and (max-width: $window-max){
+    .hidden{display: block !important;}
   }
 }

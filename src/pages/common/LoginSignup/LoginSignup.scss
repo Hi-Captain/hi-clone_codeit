@@ -10,6 +10,7 @@
   .LS-container{
     width: 102.2rem;
     height: 84.8rem;
+    @media only screen and (max-width:$window-max){width: 97.2rem;}
     display: flex;
 
     overflow: hidden;

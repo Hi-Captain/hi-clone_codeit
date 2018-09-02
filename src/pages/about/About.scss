@@ -34,10 +34,9 @@
     background-color: #f9f9f9;
 
     &__container{
-      width: 111.9rem;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
 
       .founder{
         display: inline-block;
@@ -77,7 +76,12 @@
 
       .wrap{
         display: inline-block;
-        width: 744px;
+        width: 74.4rem;
+        margin-left: 7.2rem;
+        @media only screen and (max-width:$window-max){
+          width: 56.9rem;
+          margin-left: 3.3rem;
+        }
         text-align: left;
   
         p{
@@ -143,6 +147,10 @@
   .features{
     padding-top: 11.6rem;
     padding-bottom: 12.9rem;
+    @media only screen and (max-width:$window-max){
+      padding-top: 7.7rem;
+      padding-bottom: 7.2rem;
+    }
 
     &__container{
       width: 100%;
@@ -152,8 +160,9 @@
       align-items: top;
 
       .feature{
-        width: 330px;
-        margin: 0 24px;
+        width: 33rem;
+        margin: 0 2.4rem;
+        @media only screen and (max-width:$window-max){width: 26.6rem}
 
         .icon{
           width: 11rem;
@@ -218,12 +227,14 @@
 
     &__container{
       width: 1146px;
+      @media only screen and (max-width:$window-max){width: 94rem;}
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
 
       .task{
         width: 34.2rem;
+        @media only screen and (max-width:$window-max){width: 30rem;}
 
         .title{
           font-size: $font-size-big;
@@ -239,10 +250,12 @@
     
           b{font-weight: bolder}
         }
-
-        .img1{@include div-img-bgSet('./img/about_course.jpg', 100%, 22.8rem)}
-        .img2{@include div-img-bgSet('./img/about_development.jpg', 100%, 22.8rem)}
-        .img3{@include div-img-bgSet('./img/about_design.jpg', 100%, 22.8rem)}
+        .img{
+          &1{@include div-img-bgSet('./img/about_course.jpg', 100%, 22.8rem)}
+          &2{@include div-img-bgSet('./img/about_development.jpg', 100%, 22.8rem)}
+          &3{@include div-img-bgSet('./img/about_design.jpg', 100%, 22.8rem)}
+          @media only screen and (max-width:$window-max){height: 20rem;}
+        }
       }
     }
   }
@@ -262,6 +275,7 @@
     }
     &__container{
       width: 111.8rem;
+      @media only screen and (max-width:$window-max){width: 96.2rem;}
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -294,6 +308,11 @@
   .team{
     padding-top: 8.5rem;
     padding-bottom: 6.7rem;
+    @media only screen and (max-width:$window-max){
+      padding-top: 8.1rem;
+      padding-bottom: 13rem;
+    }
+
     background-image: url(./img/about_team-bg.jpg);
     background-position: center top;
     background-size: cover;
@@ -310,6 +329,7 @@
 
     &__container{
       width: 72rem;
+      @media only screen and (max-width:$window-max){width:46rem;}
       margin: 0 auto;
       display: flex;
       justify-content: space-around;

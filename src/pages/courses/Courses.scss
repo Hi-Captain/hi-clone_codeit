@@ -11,7 +11,7 @@
     h1{
       font-size: 3.6rem;
       font-weight: 300;
-      margin: 0 0 1.5rem;
+      margin: 0 0 1.6rem;
       text-align: center;
       line-height: 1.1;
     }
@@ -21,11 +21,13 @@
       line-height: 1.4;
       margin: 0;
       text-align: center;
+      font-size: $font-size-medium;
     }
   }
 
   &__container{
     width: 108rem;
+    @media only screen and (max-width:$window-max){width: 72rem;}
     margin: 0 auto;
     margin-top: 5rem;
     display: flex;
@@ -128,6 +130,7 @@
         button{
           width: 18rem;
           height: 5rem;
+          font-family: inherit;
           font-size: $font-size-small;
           display: block;
           margin: 0 auto;
@@ -148,8 +151,10 @@
     margin: 0 auto;
     margin-bottom: 5rem;
     padding: 0 1.5rem;
+    @media only screen and (max-width:$window-max){width: 72rem;}
 
     button{
+      padding: 1px 7px 2px;
       cursor: pointer;
       outline: none;
       font-size: $font-size-small;
@@ -164,6 +169,7 @@
     width: 105rem;
     margin: 0 auto;
     border: none;
+    @media only screen and (max-width:$window-max){width: 70rem;}
 
     h3{
       font-size: 2.4rem;
@@ -172,23 +178,27 @@
       padding: 0 3rem;
       color: $font-color-light-dark;
     }
-    .question{
-      padding: 1.6rem 3rem;
-      border-bottom: 1px solid rgba(151,151,151,0.3);
+    .panel{
+      margin-bottom: 3rem;
 
-      h4{
-        font-weight: 500;
-        font-size: $font-size-default;
-        font-family: inherit;
-        color: #303030;
-        line-height: 1.71;
+      .question{
+        padding: 1.6rem 3rem;
+        border-bottom: 1px solid rgba(151,151,151,0.3);
+  
+        h4{
+          font-weight: 500;
+          font-size: $font-size-default;
+          font-family: inherit;
+          color: #303030;
+          line-height: 1.71;
+        }
       }
-    }
-    .answer{
-      font-size: 16px;
-      padding: 22px 30px;
-      background-color: white;
-      line-height: 1.8;
+      .answer{
+        font-size: 16px;
+        padding: 22px 30px;
+        background-color: white;
+        line-height: 1.8;
+      }
     }
     .faq-btn{
       padding: 1.6rem 3rem;

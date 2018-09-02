@@ -6,11 +6,13 @@ class Courses extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
     window.addEventListener('scroll', this._ScrollNav);
+    document.querySelector('.footer').classList.toggle('border-none');
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this._ScrollNav);
-    document.querySelector('.navbar').classList.add('transparent')
+    document.querySelector('.navbar').classList.add('transparent');
+    document.querySelector('.footer').classList.toggle('border-none');
   }
   
   render() {
@@ -63,7 +65,7 @@ class Courses extends Component {
               <p>예쁘기만 한 사이트? 이제 그만! 요즘은 인터랙티브한 사이트가 대세죠~ JavaScript와 jQuery를 배우며 웹 프론트엔드 개발을 제대로 배워보세요!</p>
               <div className="prereq">
                 <div className="book-icon"/>선이수 과목<br />
-                <span>없음</span>
+                <span>프로그래밍 기초, HTML/CSS</span>
               </div>
               <div className="price">
                 <div className="original">129,000원</div>

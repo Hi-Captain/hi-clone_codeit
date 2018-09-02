@@ -75,19 +75,19 @@ class About extends Component {
 
           <div className="tasks__container">
             <div className="task">
-              <div className="img1" />
+              <div className="img img1" />
               <div className="title">강의 제작</div>
               <div className="description">코드잇의 대표가 직접 강사로 참여하여 <b>커리큘럼 개발에 큰 노력을 기울입니다.</b> 수차례의 검수 과정을 거치고, 강의와 과제의 연계성을 높이기 위해 노력합니다.  컴퓨터 과학의 깊은 내용을 쉽게 가르치며, 재미있는 인터페이스를 통해 끝까지 이수하게 합니다.</div>
             </div>
 
             <div className="task">
-              <div className="img2" />
+              <div className="img img2" />
               <div className="title">개발</div>
               <div className="description">수강생들이 공부하기에 적합한 온라인 시스템을 안정적으로 유지하기 위해 개선방법을 찾고 테스트하는 것을 게을리하지 않습니다. 즉각적인 실행 및 채점에 대한 특허권을 취득했으며, 게임화를 통한 커뮤니티 활성화, 맞춤 관리 시스템 등 <b>기술을 통해 교육 효과를 증대시키려고 합니다.</b></div>
             </div>
 
             <div className="task">
-              <div className="img3" />
+              <div className="img img3" />
               <div className="title">디자인/기획</div>
               <div className="description">수강생들이 <b>어떻게 하면 편리하게 사이트를 이용할 수 있을지 고민</b>하며 문제점들을 개선합니다. 코드잇의 이름을 알리고 브랜드의 가치를 높이기 위해 글자 한자, 버튼 하나까지 시각적인 즐거움을 만들기 위해 노력합니다.</div>
             </div>
